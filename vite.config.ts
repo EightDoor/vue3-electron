@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import styleImport from "vite-plugin-style-import";
+import * as path from "path";
 
 
 export default defineConfig({
@@ -9,6 +10,11 @@ export default defineConfig({
   },
   build: {
     outDir: "electron/dist",
+  },
+  resolve: {
+    alias: [
+      { find: '@', replacement: '/src' },
+    ],
   },
   plugins: [
     vue(),
