@@ -511,6 +511,11 @@ debug@^4.3.2:
   dependencies:
     ms "2.1.2"
 
+debugout.js@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.nlark.com/debugout.js/download/debugout.js-1.0.0.tgz#9121a0da8eecc89d32f4b4fff72562a7840a5ce5"
+  integrity sha1-kSGg2o7syJ0y9LT/9yVip4QKXOU=
+
 decompress-response@^3.3.0:
   version "3.3.0"
   resolved "https://registry.npm.taobao.org/decompress-response/download/decompress-response-3.3.0.tgz?cache=0&sync_timestamp=1613125385685&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdecompress-response%2Fdownload%2Fdecompress-response-3.3.0.tgz#80a4dd323748384bfa248083622aedec982adff3"
@@ -554,6 +559,11 @@ duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.npm.taobao.org/duplexer3/download/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
+
+electron-is-dev@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/electron-is-dev/download/electron-is-dev-2.0.0.tgz#833487a069b8dad21425c67a19847d9064ab19bd"
+  integrity sha1-gzSHoGm42tIUJcZ6GYR9kGSrGb0=
 
 electron@^12.0.8:
   version "12.0.8"

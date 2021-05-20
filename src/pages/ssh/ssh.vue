@@ -3,7 +3,7 @@
   <div id="terminal"></div>
 </template>
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue';
+import { defineComponent } from 'vue';
 import { Terminal } from 'xterm';
 
 const SSh = defineComponent({

@@ -1,10 +1,15 @@
 <template>首页</template>
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted } from 'vue';
+import { log } from '@/utils/log';
 
 const Home = defineComponent({
   name: 'home',
-  setup() {},
+  setup() {
+    onMounted(() => {
+      log('测试内容');
+    });
+  },
 });
 
 export default Home;
