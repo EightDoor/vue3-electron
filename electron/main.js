@@ -1,11 +1,18 @@
+const { init } = require('./ssh/ssh');
+
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const isDev = require('electron-is-dev');
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+      // preload: path.join(__dirname, 'preload.js'),
+    },
   });
   //
   isDev ? dev() : win.loadFile(path.join(__dirname, 'dist/index.html'));
@@ -13,9 +20,10 @@ function createWindow() {
     win.loadURL('http://localhost:9999/').then(
       (
         r // 打开调试
-      ) => win.webContents.openDevTools()
+      ) => win.webContents.openDevTools({ mode: 'bottom' })
     );
   }
+  init();
 }
 
 app.whenReady().then(() => {

@@ -1,27 +1,25 @@
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import styleImport from "vite-plugin-style-import";
-import * as path from "path";
-
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import styleImport from 'vite-plugin-style-import';
+import * as path from 'path';
 
 export default defineConfig({
   server: {
     port: 9999,
   },
   build: {
-    outDir: "electron/dist",
+    outDir: 'electron/dist',
   },
   resolve: {
-    alias: [
-      { find: '@', replacement: '/src' },
-    ],
+    alias: [{ find: '@', replacement: '/src' }],
   },
+  logLevel: 'info',
   plugins: [
     vue(),
     styleImport({
       libs: [
         {
-          libraryName: "element-plus",
+          libraryName: 'element-plus',
           esModule: true,
           ensureStyleFile: true,
           resolveStyle: (name) => {

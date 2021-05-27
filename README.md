@@ -1,4 +1,6 @@
 # 运行
+- 构建node-gpy
+  - 执行 nmp run rebuild
 - `npm run z`
 # 其他
 - 编辑器使用webstorm 
