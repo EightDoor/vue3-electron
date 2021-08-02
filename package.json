@@ -1,7 +1,7 @@
 {
   "name": "vite-project",
   "version": "0.0.0",
-  "main": "main.js",
+  "main": "./electron/main.js",
   "scripts": {
     "z": "concurrently \"npm run dev\" \"npm run start\"",
     "start": "electron ./electron",
@@ -10,9 +10,11 @@
     "serve": "vite preview",
     "lint": "yarn prettier --write",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "postinstall": "electron-builder install-app-deps"
+    "dist:all": "electron-builder -mwl",
+    "postinstall": "electron-builder install-app-deps",
+    "dist:linux": "electron-builder --linux deb tar.xz"
   },
+  "author": "周凯 <851708184@qq.com>",
   "dependencies": {
     "element-plus": "^1.0.2-beta.65",
     "vue": "^3.2.0-beta.7",
