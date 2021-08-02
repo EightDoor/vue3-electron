@@ -19,7 +19,7 @@ const Slider = defineComponent({
         url: 'home',
       }
     ]);
-    function change(item) {
+    function change(item: any) {
       console.log(`当前选择的: ${JSON.stringify(item)}`);
       router.push(item.url);
     }

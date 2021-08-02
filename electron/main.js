@@ -22,7 +22,9 @@ function createWindow() {
   //
   isDev ? dev() : win.loadFile(path.join(__dirname, 'dist/index.html'));
   function dev() {
-    win.loadURL('http://localhost:9999/').then(
+    // const url = 'http://localhost:9999/';
+    const url = 'http://192.168.31.30:9999/';
+    win.loadURL(url).then(
       (
         r // 打开调试
       ) => win.webContents.openDevTools({ mode: 'bottom' })

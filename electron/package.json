@@ -4,12 +4,11 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "author": "周凯",
   "license": "ISC",
   "dependencies": {
-    "electron": "^12.0.8"
+    "electron": "^13.1.7"
   }
 }
