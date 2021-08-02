@@ -17,7 +17,11 @@ const Slider = defineComponent({
       {
         title: '首页',
         url: 'home',
-      }
+      },
+      {
+        title: 'ssh远程连接',
+        url: 'ssh',
+      },
     ]);
     function change(item) {
       console.log(`当前选择的: ${JSON.stringify(item)}`);

@@ -3,8 +3,6 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const isDev = require('electron-is-dev');
 
-
-process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 function createWindow() {
   const win = new BrowserWindow({
     width: 1200,
@@ -26,9 +24,7 @@ function createWindow() {
       (
         r // 打开调试
       ) => win.webContents.openDevTools({ mode: 'bottom' })
-    ).catch(err=>{
-      console.log(err);
-    });
+    );
   }
 }
 

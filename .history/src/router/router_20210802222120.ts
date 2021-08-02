@@ -1,7 +1,8 @@
-import BaseLayout from '@/layout/BaseLayout.vue';
-import Home from '@/pages/home/home.vue';
-import NotFound from '@/pages/other/not_found.vue';
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import Home from '@/pages/home/home.vue';
+import BaseLayout from '@/layout/BaseLayout.vue';
+import NotFound from '@/pages/other/not_found.vue';
+import SSh from '@/pages/ssh/ssh.vue';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -12,7 +13,11 @@ const routes: RouteRecordRaw[] = [
       {
         path: 'home',
         component: Home,
-      }
+      },
+      {
+        path: 'ssh',
+        component: SSh,
+      },
     ],
   },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },

@@ -1,6 +1,6 @@
 <template>
   <div>
-    首页123123
+    首页123
   </div>
 </template>
 <script lang="ts">

@@ -2,9 +2,9 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const isDev = require('electron-is-dev');
-
-
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+
+
 function createWindow() {
   const win = new BrowserWindow({
     width: 1200,
@@ -22,7 +22,7 @@ function createWindow() {
   //
   isDev ? dev() : win.loadFile(path.join(__dirname, 'dist/index.html'));
   function dev() {
-    win.loadURL('http://localhost:9999/').then(
+    win.loadURL('http://192.168.31.30:9999/').then(
       (
         r // 打开调试
       ) => win.webContents.openDevTools({ mode: 'bottom' })

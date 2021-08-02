@@ -1,22 +1,17 @@
+const { init } = require('./ssh/ssh');
 
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const isDev = require('electron-is-dev');
 
-
-process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 function createWindow() {
   const win = new BrowserWindow({
     width: 1200,
     height: 800,
-    maximizable: true,
-    minimizable: true,
-    resizable: true,
     webPreferences: {
-      webSecurity: false,
       nodeIntegration: true,
       contextIsolation: false,
-      preload: path.join(__dirname, 'preload.js'),
+      // preload: path.join(__dirname, 'preload.js'),
     },
   });
   //
@@ -26,10 +21,9 @@ function createWindow() {
       (
         r // 打开调试
       ) => win.webContents.openDevTools({ mode: 'bottom' })
-    ).catch(err=>{
-      console.log(err);
-    });
+    );
   }
+  init();
 }
 
 app.whenReady().then(() => {

@@ -5,7 +5,6 @@ import styleImport from 'vite-plugin-style-import';
 export default defineConfig({
   server: {
     port: 9999,
-    host: '0.0.0.0',
   },
   build: {
     outDir: 'electron/dist',

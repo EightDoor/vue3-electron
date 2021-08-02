@@ -1,8 +1,4 @@
-<template>
-  <div>
-    首页123123
-  </div>
-</template>
+<template>首页</template>
 <script lang="ts">
 import { defineComponent, onMounted } from 'vue';
 import { log } from '@/utils/log';

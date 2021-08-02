@@ -1,11 +1,11 @@
-import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 import styleImport from 'vite-plugin-style-import';
+import * as path from 'path';
 
 export default defineConfig({
   server: {
     port: 9999,
-    host: '0.0.0.0',
   },
   build: {
     outDir: 'electron/dist',
