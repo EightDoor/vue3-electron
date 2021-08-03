@@ -14,6 +14,7 @@ export default defineConfig({
     alias: [{ find: '@', replacement: '/src' }],
   },
   logLevel: 'info',
+  base: "./",
   plugins: [
     vue(),
     styleImport({
