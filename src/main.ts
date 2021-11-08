@@ -3,12 +3,12 @@ import App from './App.vue';
 
 // element-plus
 import ElementPlus from 'element-plus';
-import 'element-plus/lib/theme-chalk/index.css';
+import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
 //router
 import router from '@/router/router';
 
 const app = createApp(App);
 
-app.use(ElementPlus, { size: 'small', zIndex: 3000 }).use(router);
+app.use(ElementPlus,  { size: 'small', zIndex: 3000, locale: zhCn}).use(router);
 app.mount('#app');
