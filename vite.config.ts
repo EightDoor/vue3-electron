@@ -9,7 +9,7 @@ export default defineConfig({
     host: '0.0.0.0',
   },
   build: {
-    outDir: 'electron/dist',
+    outDir: 'electron/run/dist',
   },
   resolve: {
     alias: [{ find: '@', replacement: '/src' }],
