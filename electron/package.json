@@ -2,13 +2,10 @@
   "name": "electron",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
+  "main": "./run/main.js",
   "author": "周凯",
   "license": "ISC",
   "dependencies": {
-    "electron": "^13.1.7"
+    "electron": "^15.3.0"
   }
 }

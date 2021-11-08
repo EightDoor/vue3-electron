@@ -324,6 +324,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/electron-is-dev@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@types/electron-is-dev@npm:1.1.1"
+  dependencies:
+    electron-is-dev: "*"
+  checksum: d058dd58790141937dc9f25fc9afad10f6646199e12167d50ce92728aaf4b25b4413c2bf5755e1c66b1b649cb7cd3520866e9520745f288608939ef51e76de79
+  languageName: node
+  linkType: hard
+
 "@types/fs-extra@npm:^9.0.11":
   version: 9.0.13
   resolution: "@types/fs-extra@npm:9.0.13"
@@ -1973,10 +1982,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-is-dev@npm:^2.0.0":
+"electron-is-dev@npm:*, electron-is-dev@npm:^2.0.0":
   version: 2.0.0
   resolution: "electron-is-dev@npm:2.0.0"
   checksum: 7393f46f06153d70a427ea904c60a092e50fbf1015c26c342cebb8324ada8c9e0c0f1f02867af56d9cc76f47be17da8cb311ea6bdc83343e7ebd2323ec4014c8
+  languageName: node
+  linkType: hard
+
+"electron-log@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "electron-log@npm:4.4.1"
+  checksum: 4bd7d5c8dbfe9f1c73f641bbb76dd349f1866adb1c5c67e1f26b9d3ad95cb09f9226ca3d49f7438a898234fae5e92cf6276c8dd44bdb549e19dd8350e64237dd
   languageName: node
   linkType: hard
 
@@ -2032,6 +2048,15 @@ __metadata:
   bin:
     electron-rebuild: lib/src/cli.js
   checksum: 0f856fc28f348f8fe4548e1c44ca57ffbc329c9b4180e96ff271ae646a64de9bef9eda7244d8450f5aa598dbcc908bd2c053981ca8e35386706492abd120e188
+  languageName: node
+  linkType: hard
+
+"electron-reload@npm:^2.0.0-alpha.1":
+  version: 2.0.0-alpha.1
+  resolution: "electron-reload@npm:2.0.0-alpha.1"
+  dependencies:
+    chokidar: ^3.5.2
+  checksum: d21cf22ad8af2695e960444f18800db2fc29aa3fd4be304fd55894186559a9f64d590aac19dbe492887a962ab7aaf0be93f8b3b2226926654f6010c65e9bd9dc
   languageName: node
   linkType: hard
 
@@ -5383,6 +5408,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vite-project@workspace:."
   dependencies:
+    "@types/electron-is-dev": ^1.1.1
     "@types/node": ^16.11.6
     "@vitejs/plugin-vue": ^1.9.4
     "@vue/compiler-sfc": ^3.2.21
@@ -5391,7 +5417,9 @@ __metadata:
     electron: ^15.3.0
     electron-builder: ^22.13.1
     electron-is-dev: ^2.0.0
+    electron-log: ^4.4.1
     electron-rebuild: ^3.2.3
+    electron-reload: ^2.0.0-alpha.1
     element-plus: ^1.2.0-beta.2
     less: ^4.1.2
     prettier: 2.4.1
