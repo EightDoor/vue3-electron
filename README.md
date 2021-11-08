@@ -1,5 +1,5 @@
 # 基础
-- vue3 typescript编写 electron脚手架
+- vue3、vite构建 typescript编写 electron脚手架
 - electron typescript编写
 - ui element-plus
 # 安装
